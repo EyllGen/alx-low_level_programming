@@ -1,9 +1,10 @@
 #include "main.h"
 
 /**
- * main - check the code.
+ * _isupper - uppercase letters
+ * @c: char to check
  *
- * Return: Always 0.
+ * Return: 0 or 1
  */
 
 int _isupper(int c)
@@ -13,3 +14,4 @@ int _isupper(int c)
 	else
 		return (0);
 }
+
