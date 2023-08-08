@@ -1,16 +1,16 @@
-[200~#include "main.h"
+#include "main.h"
 #include <stdio.h>
 #include <stdlib.h>
 
 char *create_array(unsigned int size, char c)
 {
-		char *ptr = malloc(sizeof(char) * size);
-			unsigned int i;
+	unsigned int i;
+	
+	char *str = malloc(sizeof(char) * size);
+	if (size == 0 || str == NULL)
+		return (NULL);
 
-				if (size == 0 || ptr == NULL)
-							return (NULL);
-
-					for (i = 0; i < size; i++)
-								ptr[i] = c;
-						return (ptr);
+	for (i = 0; i < size; i++)
+		str[i] = c;
+	return (str);
 }
